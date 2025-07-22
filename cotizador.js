@@ -16,7 +16,7 @@ const coinInfo = document.querySelector('#coinInfo')
     
 // })
 form.addEventListener('submit', async e =>{
-    e.preventDefault();
+    e.preventDefault();                              //  [...] operador de propagacion
     const coinSelected = [...coin.children].find((option) => option.selected).value;
     const cryptoSelected = [...crypto.children].find((option) => option.selected).value;
     const amountValue = amount.value;
