@@ -2,7 +2,7 @@
 
 Este es un cotizador que utliliza principalmente Javascript para su funcionalidad.
 <div align="center">
-<img src="img/Captura de pantalla (4).png" width="800">
+<img src="img/Captura de pantalla (5).png" width="800">
 </div>
 
 
