@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cotizador</title>
+</head>
+  <body><div id="base">
+      <h1 id="titulo">Cotizador</h1>
+      <div id="container">   <!-- columna 1 -->
+        <img id="imagen" src="img/crypto1.svg" alt="" width="60%">
+        <div id="coinContainer">                <!-- columna 2 -->
+            <form id="coinForm">
+                <div class="coinInputContainer"> 
+                    <label for="coin">Elige tu moneda:</label>
+                    <select class="coinInput" id="coin">
+                        <option value="" selected disabled>Selecciona una moneda</option>
+                        <option value="USD">Dolar</option>
+                        <option value="EUR">Euro</option>
+                        <option value="ARS">Pesos Argentinos</option>
+                        <option value="VES">Bolivares</option>
+                        <option value="PEN">Nuevo Sol</option>
+                        <option value="JPY">Yen</option>
+                        <option value="KRW">República de Corea del Sur</option>
+                    </select>
+                </div>
+                <div class="coinInputContainer">
+                    <label for="crypto">Elige tu Crypto:</label>
+                    <select class="coinInput" id="crypto">
+                        <option value="" selected disabled>Selecciona una CryptoMoneda</option>
+                        <option value="BTC">Bitcoin</option>
+                        <option value="ETH">Ethereum</option>
+                        <option value="AXS">AXS</option>
+                        <option value="BNC">Binanc</option>
+                    </select>
+                </div>
+                <div class="coinInputContainer">
+                    <label for="amount">Ingresa el monto:</label>
+                    <input type="number" class="coinInput" id="amount" placeholder="Monto">
+                </div>
+                <button id="formBTN" type="submit">Cotizar</button>
+            </form>
+            <div id="coinInfo">
+                <!-- <p class="info">El precio es de: <span class="price">4444$</span></p>
+                <p class="info">El precio mas alto es de: <span class="price">4444$</span></p>
+                <p class="info">El precio mas bajo es de: <span class="price">4444$</span></p>
+                <p class="info">Variación 24h: <span class="price">4.5%</span></p>
+                <p class="info">Puede comprar: <span class="price">44 ETH</span></p> -->
+            </div> 
+        </div>
+      </div>
+      </div>  
+  </body>
+  <footer>
+    <div class="redes">
+        <h3>Elaborado por:</h3>
+        <p id="name">Ángel Hernández</p>
+        <a href="https://github.com/AngelhtProgrammer" target="_blank"
+          ><img src="img/github.png" width="75px" height="75px" alt=""
+        /></a>
+  </footer>
+  <script src="cotizador.js"></script>
+</html>
