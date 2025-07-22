@@ -20,7 +20,7 @@ Este es un cotizador que utliliza principalmente Javascript para su funcionalida
 
 ## Funcion Cotizador.
 
-Aqui el como se valida los datos enviados:
+Aqui el como se valida los datos enviados con los recibidos de la API:
 
 ```python
 form.addEventListener('submit', async e =>{
@@ -33,4 +33,6 @@ form.addEventListener('submit', async e =>{
         <div class="loader"></div>`
      const respuesta = await (await fetch(`https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cryptoSelected}&tsyms=${coinSelected}`)
     ).json();  
+
+     const price = respuesta.DISPLAY[cryptoSelected][coinSelected].PRICE;
 ```
