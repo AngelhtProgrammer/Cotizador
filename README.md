@@ -1,13 +1,16 @@
 # Validaciòn.
 
 Este es un cotizador que utliliza principalmente Javascript para su funcionalidad.
+
+***
 <div align="center">
 <img src="img/Captura de pantalla (5).png" width="800">
 </div>
 
 
 ***
-
+Se utiliza una API para obtener los datos a tiempo real de los cambios de las CryptoMonedas.
+Cuando le das click al boton se realiza un evento de tipo 'submit' en el cual se encuentran las opciones seleccionadas y el monto ingresado luego se pintan en pantalla el precio mas alto, mas bajo, su variación en las ultimas 24 horas en que se encuentra la crypto seleccionada con la moneda que se selecciono por ultimo cuantas cryptos puedes comprar con el monto que se registro.
 
 
 ## Archivos.
